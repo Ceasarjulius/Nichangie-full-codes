@@ -1,0 +1,30 @@
+/* Dashboard.css */
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #333; /* Background color for the sidebar */
+  color: black;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+  color: #ffc107; /* Color on hover */
+}
+
+/* User Image Styles */
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid #fff;
+}
+
+

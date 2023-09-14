@@ -1,0 +1,179 @@
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Add padding for spacing */
+  background-color: white; /* Green background color */
+  z-index: 999; /* Ensure it's above other content */
+}
+.sidebar {
+  background-color: #d5f4d5;
+  /* height: 150vh; */
+  height: 100vh;
+  width: 220px;
+  /* padding: 20px 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-option {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar-option {
+  /* margin: 15px 0;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; */
+  width: 250px; /* Set a fixed width for the sidebar */
+  /* background-color: #333; */
+  color: #000000;
+  padding: 20px;
+  flex-shrink: 0; 
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.top-left img {
+  margin-right: 10px; /* Add spacing between image and text */
+}
+
+/* Reset default margin and padding for body and other elements */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Your styles here */
+.ongoing-container {
+  /* position: relative;
+  margin: 20px;
+  padding-top: 100px; */
+  display: flex;
+  /* height: 100vh; */
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(170, 242, 191, 0.7); /* Faded green color */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.header-image {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.ongoing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for the header row */
+.ongoing-table thead tr {
+  background-color: rgba(170, 242, 191, 0.7); /* Faded green color */
+}
+
+/* Style for the footer */
+.ongoing-table tfoot {
+  background-color: rgba(170, 242, 191, 0.7); /* Faded green color */
+}
+
+.ongoing-table th,
+.ongoing-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ongoing-table th {
+  background-color: #f2f2f2;
+}
+
+.status-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-ongoing {
+  /* background-color: purple; */
+  color: orange;
+}
+
+.status-paid {
+  /* background-color: #aaf2bf; */
+  color: green;
+}
+
+.status-open {
+  /* background-color: #aaccff; */
+  color: blue;
+}
+
+.status-due {
+  /* background-color: #ff9999; */
+  color: red;
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+
+
+

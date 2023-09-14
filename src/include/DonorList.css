@@ -1,0 +1,50 @@
+/* DonorList.css */
+
+/* Style for the container div */
+.donor-list {
+    margin: 20px;
+  }
+  
+  /* Style for the heading */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Style for the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Style for table header cells */
+  th {
+    background-color: #d5f4d5;
+    color: black;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  /* Style for table data cells */
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Style for the table footer */
+  tfoot td {
+    background-color: #d5f4d5;
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style for table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for table rows on hover */
+  tr:hover {
+    background-color: #ddd;
+  }
