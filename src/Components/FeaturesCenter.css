@@ -1,0 +1,37 @@
+.h3-feature-title1 {
+    position: relative;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    display: inline-block;
+    width: 235px;
+  }
+  .the-gradual-accumulation {
+    margin: 0;
+  }
+  .paragraph-feature-description1 {
+    position: relative;
+    font-size: var(--btn-text-size);
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    display: inline-block;
+    width: 222px;
+  }
+  .featurescenter {
+    border-radius: var(--br-5xs);
+    background-color: var(--light-text-color);
+    box-shadow: var(--accentuate-drop-shadow);
+    width: 328px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-16xl) var(--padding-21xl);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+    text-align: center;
+    font-size: var(--h5-size);
+    color: var(--text-color);
+    font-family: var(--btn-text);
+  }
+  

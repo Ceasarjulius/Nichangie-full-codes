@@ -1,0 +1,22 @@
+.icoutline-email-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .sizeextra-large {
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    box-shadow: var(--light-drop-shadow);
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-9xs);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  

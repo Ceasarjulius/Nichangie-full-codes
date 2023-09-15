@@ -1,166 +1,225 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import Footer1 from "../Components/Footer1";
+import StatesDefault from "../Components/StatesDefault";
+import "./SeeAll.css";
+
 const SeeAll = () => {
+  const navigate = useNavigate();
+
+  const onFilledmediumFilledButtonClick = useCallback(() => {
+    navigate("/donate");
+  }, [navigate]);
+
+  const onFilledmediumFilledButton1Click = useCallback(() => {
+    navigate("/donate");
+  }, [navigate]);
+
+  const onFilledmediumFilledButton2Click = useCallback(() => {
+    navigate("/donate");
+  }, [navigate]);
+
+  const onFilledmediumFilledButton3Click = useCallback(() => {
+    navigate("/donate");
+  }, [navigate]);
+
+  const onFilledmediumFilledButton4Click = useCallback(() => {
+    navigate("/donate");
+  }, [navigate]);
+
+  const onFilledmediumFilledButton5Click = useCallback(() => {
+    navigate("/donate");
+  }, [navigate]);
+
+  const onFilledmediumFilledButton6Click = useCallback(() => {
+    navigate("/login");
+  }, [navigate]);
+
+  const onReadMore4Click = useCallback(() => {
+    navigate("/read-more");
+  }, [navigate]);
+
   return (
-    <div className="uk-section">
-      <div className="uk-container ">
-        <div className="uk-child-width-1-2@m" data-uk-grid>
-          <div>
-            <form className="uk-search uk-search-default uk-width-1-1">
-              <div className="uk-grid-small" data-uk-grid>
-                <div className="uk-width-expand">
-                  <input className="uk-input uk-form-large uk-border-rounded-medium" type="search" placeholder="Search anything" />
-                </div>
-                <div className="uk-width-auto">
-                  <button className="uk-button uk-button-large uk-button-primary">Search</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div className="the-pic" >
-      <div>
-       <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./sicklecell.png" alt="sickle cell image"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            <div class="uk-position-small uk-position-top-left">
-            </div>            
-          </div>
-          <div class="uk-card-body grid grid-cols-3 gap-4">
-            <div class="uk-text-muted uk-text-small">Help collect funds for sickle cell anaemia patients <li><Link to ="/readmore">Read more</Link></li></div>
-            
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>
-        </div>
+    <div className="see-all1">
+      <img className="see-all-child" alt="" src="/heartpatient.png" />
+      <img className="see-all-item" alt="" src="/rectangle-19@2x.png" />
+      <img className="see-all-inner" alt="" src="/cancer.png" />
+      <StatesDefault
+        button="DONATE NOW"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="none"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% - 193.5px)"
+        statesDefaultRight="1125px"
+        statesDefaultWidth="228px"
+        statesDefaultHeight="50px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="17px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButtonClick}
+      />
+      <StatesDefault
+        button="DONATE NOW"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="none"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% + 595.5px)"
+        statesDefaultRight="98px"
+        statesDefaultWidth="228px"
+        statesDefaultHeight="50px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="17px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButton1Click}
+      />
+      <StatesDefault
+        button="DONATE NOW"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="none"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% + 595.5px)"
+        statesDefaultRight="606px"
+        statesDefaultWidth="228px"
+        statesDefaultHeight="50px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="17px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButton2Click}
+      />
+      <StatesDefault
+        button="DONATE NOW"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="none"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% + 595.5px)"
+        statesDefaultRight="1125px"
+        statesDefaultWidth="228px"
+        statesDefaultHeight="50px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="17px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButton3Click}
+      />
+      <StatesDefault
+        button="DONATE NOW"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="none"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% - 193.5px)"
+        statesDefaultRight="111px"
+        statesDefaultWidth="228px"
+        statesDefaultHeight="50px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="17px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButton4Click}
+      />
+      <StatesDefault
+        button="DONATE NOW"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="none"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% - 193.5px)"
+        statesDefaultRight="611px"
+        statesDefaultWidth="228px"
+        statesDefaultHeight="50px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="17px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButton5Click}
+      />
+      <div className="help-young-sheldon3">
+        Help young Sheldon perform his heart surgery
       </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-            <div class="uk-card-media-top uk-inline uk-light">
-              <img src="./heartpatient.png" alt="young sheldom's image"/>
-              <div class="uk-position-cover uk-overlay-xlight"></div>
-              <div class="uk-position-small uk-position-top-left">
-                
-              </div>        
-            </div>
-            <div class="uk-card-body">
-              <div class="uk-text-muted uk-text-small">Help young sheldom perform his heart surgery <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a> 
-            </div>
-          </div>
-        </div>
+      <div className="it-is-possible">{`it is possible if we come together, he can overcome the kidney issue by transplant `}</div>
+      <div className="help-collect-funds1">
+        Help collect funds for sickle cell anemia patients
       </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./cancer.png" alt="an image of a patient with cancer"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            
-          </div>
-          <div class="uk-card-body">
-            <div class="uk-text-muted uk-text-small">Help Anne beat cancer <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>    
-        </div>
-       </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./cancer.png" alt="an image of a patient with cancer"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            
-          </div>
-          <div class="uk-card-body">
-            <div class="uk-text-muted uk-text-small">it is possible if we come together he can overcome the kidney issue <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>
-          
-          
-        </div>
+      <div className="skin-diseases-kills">
+        Skin diseases kills most of our beloved ones help jonathan
       </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./cancer.png" alt="an image of a patient with cancer"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            
-          </div>
-          <div class="uk-card-body">
-            <div class="uk-text-muted uk-text-small">Skin diseases are very dangerous help brother Jonathan <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>
-          
-          
-        </div>
+      <div className="even-elders-have">
+        even elders have to live happily show your love to madam Jane overcome
+        lung disease
       </div>
-      <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-        <div class="uk-card-media-top uk-inline uk-light">
-          <img src="./cancer.png" alt="an image of a patient with cancer"/>
-          <div class="uk-position-cover uk-overlay-xlight"></div>
-          
-        </div>
-        <div class="uk-card-body">
-          <div class="uk-text-muted uk-text-small">Even elders need happy life, madam Jane can be cured of lung disease <li><Link to ="/readmore">Read more</Link></li></div>
-          <a href="donate.html"><button class="green-button">Donate now</button></a>
-        </div>
-        
-        
-      </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./cancer.png" alt="an image of a patient with cancer"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            
-          </div>
-          <div class="uk-card-body">
-            <div class="uk-text-muted uk-text-small">Help Anne beat cancer <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>
-          
-          
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./cancer.png" alt="an image of a patient with cancer"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            
-          </div>
-          <div class="uk-card-body">
-            <div class="uk-text-muted uk-text-small">Help Anne beat cancer <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>
-          
-          
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-border-rounded-large uk-overflow-hidden">
-          <div class="uk-card-media-top uk-inline uk-light">
-            <img src="./cancer.png" alt="an image of a patient with cancer"/>
-            <div class="uk-position-cover uk-overlay-xlight"></div>
-            
-          </div>
-          <div class="uk-card-body">
-            <div class="uk-text-muted uk-text-small">Help Anne beat cancer <li><Link to ="/readmore">Read more</Link></li></div>
-            <a href="donate.html"><button class="green-button">Donate now</button></a>
-          </div>
-          <div class="uk-text-center uk-margin-large-top">
-      <ul class="uk-pagination uk-flex-center uk-margin-remove">
-        <li><a class="uk-button uk-button-primary uk-disabled" href="#">1</a></li>
-        <li><a class="uk-button uk-button-primary-light" href="#">2</a></li>
-        <li><a class="uk-button uk-button-primary-light" href="#">3</a></li>
-        <li><a class="uk-button uk-button-primary-light" href="#">4</a></li>
-        <li><a class="uk-button uk-button-primary-light" href="#">Next</a></li>
-      </ul>    
-    </div>      
-        </div>
-      </div>
-    </div>
-        </div>
-      </div>
+      <div className="help-anne-beat2">Help Anne beat cancer</div>
+      <img
+        className="unsplashdjrtjx-obce-icon"
+        alt=""
+        src="/heartpatient.png"
+      />
+      <img
+        className="unsplashxi-dfx7oxkk-icon"
+        alt=""
+        src="/cancer.png"
+      />
+      <img
+        className="unsplashvqlwfi-lyeo-icon"
+        alt=""
+        src="/rectangle-19@2x.png"
+      />
+      <button className="read-more4">Read more</button>
+      <button className="read-more5">Read more</button>
+      <button className="read-more6">Read more</button>
+      <button className="read-more7">Read more</button>
+      <button className="read-more8" onClick={onReadMore4Click}>
+        Read more
+      </button>
+      <button className="read-more9">Read more</button>
+      <Footer1 />
+      <img className="handmade-icon8" alt="" src="/nichangielogo.png" />
+      <div className="nichangie8">Nichangie</div>
+      <StatesDefault
+        button="Sign in"
+        statesDefaultBorderRadius="25px"
+        statesDefaultBackgroundColor="#4ec14c"
+        statesDefaultCursor="pointer"
+        statesDefaultBorder="unset"
+        statesDefaultPosition="absolute"
+        statesDefaultTop="calc(50% - 977.5px)"
+        statesDefaultRight="265px"
+        statesDefaultWidth="100px"
+        statesDefaultHeight="40px"
+        statesDefaultBoxSizing="border-box"
+        statesDefaultPadding="var(--padding-7xs) var(--padding-5xl)"
+        statesDefaultLeft="unset"
+        buttonDisplay="inline-block"
+        buttonFontSize="14px"
+        buttonFontFamily="Montserrat"
+        onFilledmediumFilledButtonClick={onFilledmediumFilledButton6Click}
+      />
+      <button className="language2">Language</button>
+      <button className="support1">Support</button>
     </div>
   );
 };
