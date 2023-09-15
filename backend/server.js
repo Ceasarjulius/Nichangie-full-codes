@@ -317,6 +317,23 @@ app.post('/logout', (req, res) => {
   });
 });
 
+
+// Define an API endpoint to retrieve patient data
+app.get('/api/patient-data/:id', (req, res) => {
+  const patientId = req.params.id; // Assuming you want to retrieve patient data based on a query parameter
+console.log(patientId)
+  // Perform a database query to fetch patient data using the patientId from the query parameter
+  db.query('SELECT * FROM users WHERE id=?', [patientId], (err, result) => {
+    if (err) {
+      console.error('Error retrieving patient data:', err);
+      res.status(500).json({ error: 'Server Error' });
+    } else {
+      console.log('Patient data retrieved successfully');
+      res.json(result); // Assuming you have a single patient's data to retrieve
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
