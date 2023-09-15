@@ -1,0 +1,40 @@
+.h3-feature-title {
+    position: relative;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+  }
+  .paragraph-feature-description {
+    position: relative;
+    font-size: var(--btn-text-size);
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    color: var(--second-text-color);
+    display: inline-block;
+    width: 350px;
+  }
+  .div,
+  .featureselevated {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .div {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .featureselevated {
+    border-radius: var(--br-6xl);
+    background-color: var(--light-text-color);
+    box-shadow: var(--light-drop-shadow);
+    width: 530px;
+    overflow: hidden;
+    flex-direction: row;
+    padding: var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-5xl);
+    text-align: left;
+    font-size: var(--h5-size);
+    color: var(--text-color);
+    font-family: var(--btn-text);
+  }
+  
