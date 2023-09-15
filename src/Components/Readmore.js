@@ -21,7 +21,7 @@ function Readmore() {
 
   useEffect(() => {
     // Fetch patient data from the API
-    axios.get('http://localhost:8000/api/patient-data/'+4)
+    axios.get('http://localhost:5000/api/patient-data/'+4)
       .then((response) => {
         
         setPatientData(response.data[0]);
@@ -33,23 +33,21 @@ function Readmore() {
   
   // Render patient data in your component
   return (
+    
     <div className="read-container">
     <div className="image-container">
      
-      {/* <img
-          className="uploadImage"
+      <img
+          className="patient-image"
           src={patientData["uploadImage"]} // Display the patient's image
           alt="Sick Patient"
-        /> */}
-        <img src = "./heartpatient.png">
-        
-        </img>
+        />
        
 
       <div className="patient-info">
           
-      <h2 className="campaignName">{patientData["campaignName"]}</h2>
-      <p className="description">{patientData["description"]}</p>
+      <h2 className="patient-heading">{patientData["campaignName"]}</h2>
+      <p className="patient-description">{patientData["description"]}</p>
 
 
       </div>
@@ -65,10 +63,26 @@ function Readmore() {
   <div className="sub-container">
   
   <div className='flex flex-column'> 
-    <div className='progress-container' >
+
+  {/* <div className='mb-2'>
+            <p>Goal</p>
+           <ProgressBar now={now} label={`${now}%`} variant="success" />
+           </div>
+
+           <div className='mb-2'>
+            <p>Amount raised</p>
+           <ProgressBar now={now} label={`${now2}M`} variant="success" />
+           </div>
+           <div className='mb-2'>
+            <p>Total days(30days)</p>
+           <ProgressBar now={now1} label={`${12}days`} variant="success" />
+           </div> */}
+{/* 
+    <div className='progress-container' > */}
          <div className='mb-2'>
           <p>Goal</p>
-         <ProgressBar now={now} label={`${now}%`} variant="success" />
+          <ProgressBar striped variant="success" now={40} />
+         {/* <ProgressBar now={now} label={`${now}%`} variant="success" /> */}
          </div>
 
          <div className='mb-2'>
@@ -80,7 +94,7 @@ function Readmore() {
           <p>Total days(30days)</p>
          <ProgressBar now={now1} label={`${12}days`} variant="success" />
          </div>
-         </div>
+         
     </div>
 
 
@@ -93,7 +107,7 @@ function Readmore() {
           <a href="/seemore" className="seemorelink">
           <img
         className="donationlist-image"
-        src="./Group.png" // Replace with your image path
+        src="/Group.png" // Replace with your image path
         alt="Sick Patient"
       /> </a> 
 
@@ -118,7 +132,7 @@ function Readmore() {
       <div className="donate-form-header">
       <b>Share this story</b>
       <a href="/share" className="sharelink">
-      <img className="share-icon" src="./shareicon.png" alt="Share Icon" />
+      <img className="share-icon" src="/share-icon.png" alt="Share Icon" />
       </a>
     </div>
     <p>Get inspiring stories to be delivered to your inbox.</p>
